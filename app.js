@@ -1,5 +1,5 @@
 // Khởi tạo bản đồ và đặt tâm tại một vị trí cụ thể (Sài Gòn)
-const map = L.map('map').setView([10.762622, 106.660172], 13);
+const map = L.map('map').setView([10.782775, 106.667933], 19);
 
 // Thêm layer bản đồ từ OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -31,8 +31,8 @@ document.getElementById('draw-circle').addEventListener('click', function() {
         const newCircle = L.circle([position.lat, position.lng], {
             color: '#3388ff', // Màu viền nhạt hơn
             fillColor: '#3388ff',
-            fillOpacity: 0.2,
-            weight: 1, // Độ dày của viền
+            fillOpacity: 0.1,
+            weight: 0.5, // Độ dày của viền
             radius: parseFloat(radius)
         }).addTo(map);
 
